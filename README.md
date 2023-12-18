@@ -1,16 +1,18 @@
 # feed_me_assignment
 
-A new Flutter project.
+Take home test for McDonalds use case.
 
-## Getting Started
+## Introduction
 
-This project is a starting point for a Flutter application.
+Widgets folder contains all UI components while Models folder contains data handling
+and data classes. Mainly models between bots and orders.
 
-A few resources to get you started if this is your first Flutter project:
+## Optimizations
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Due to restrictions of not using Dart modules. Advanced built-in functions of Dart List or 
+other Dart collections structures are not used. Only functions related to list add and remove 
+functions are used. Bots can be optimized to use a Stack whereas Pending Orders can be optimized 
+to use Priority Queues.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Context handling can also be changed to use navigator's context if there is routing across
+multiple widgets/pages.
